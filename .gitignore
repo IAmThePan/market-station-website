@@ -1,0 +1,6 @@
+## MacOS
+.DS_Store
+
+## Hugo Generated Files
+public
+resources

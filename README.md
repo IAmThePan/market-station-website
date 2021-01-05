@@ -6,7 +6,7 @@ Apartments
   - [ ] Floor Plans
   - [ ] Amenities
   - [ ] Location
-- [ ] Photo Galary
+- [ ] Photo Gallery
 - [ ] Apply (includes iFrame to AppFolio Page)
 - [ ] Resident Portal with AppFolio links
 - [ ] Contact Us (includes a form)
@@ -22,3 +22,4 @@ Resources that I need:
   - [ ] Address and blurb about location
   - [ ] Phone number and email.
 - [ ] What happens when I submit the form on the Contact Us page?
+- [ ] Do you want a page in Spanish as well as English?

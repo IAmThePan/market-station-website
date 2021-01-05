@@ -1,0 +1,47 @@
+/* Normalize */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Cryptical Theme */
+/*
+Primary Color: #3C4C5C
+Secondary Color: #F9E9CC
+*/
+
+body {
+  background-color: #FCFBF8;
+}
+
+/* Header */
+header {
+  font-family: 'Nunito', sans-serif;
+  background-color: #3C4C5C;
+  padding: 0 20px;
+}
+
+header .HeaderContent {
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+
+}
+
+/* Footer */
+footer {
+  font-family: 'Nunito', sans-serif;
+  background-color: #3C4C5C;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
