@@ -1,5 +1,40 @@
 <header>
   <div class="HeaderContent">
-    <h1>{{ .Site.Title }}</h1>
+    <a class="HeaderContent__HomeLink" href="/">
+      <h1>{{ .Site.Title }}</h1>
+    </a>
+    <div class="HeaderContent__MenuLinks">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.header }}
+        {{ if .HasChildren }}
+          <div class="HeaderContent__MenuLinkContainer">
+            <a href="{{ .URL }}" class="HeaderContent__MenuLink
+                {{- if $currentPage.HasMenuCurrent "header" . }} HeaderContent--Active{{- end }}
+                {{- with .Page.Params.classHeaderLink }} {{ . }}{{- end }}">
+              {{ .Name }}
+            </a>
+            <div class="HeaderContent__MenuChildren">
+              {{ range .Children }}
+                <div class=HeaderContent__MenuChildContainer>
+                  <a href="{{ .URL }}" class="HeaderContent__MenuLink HeaderContent__MenuChild
+                      {{- if $currentPage.IsMenuCurrent "header" . }} HeaderContent--Active{{- end }}
+                      {{- with .Page.Params.classHeaderLink }} {{ . }}{{- end }}">
+                    {{ .Name }}
+                  </a>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        {{ else }}
+          <div class="HeaderContent__MenuLinkContainer">
+            <a href="{{ .URL }}" class="HeaderContent__MenuLink
+                {{- if $currentPage.IsMenuCurrent "header" . }} HeaderContent--Active{{- end }}
+                {{- with .Page.Params.classHeaderLink }} {{ . }}{{- end }}">
+              {{ .Name }}
+            </a>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
   </div>
 </header>

@@ -1,12 +1,15 @@
-baseURL = "https://marketstationapartments.com"
+baseURL = "https://liveatmarketstation.com"
 languageCode = "en-us"
 title = "Market Station Apartments | Greensboro, NC"
 theme = "cryptical"
 enableGitInfo = true
 
-[Params]
-  description = "Check for available units at Market Station Apartments in Greensboro, NC. View apartment types, photos, and community amenities."
-  propertyAddress = "5515 W Market St, Greensboro, NC 27409"
-  propertyPhone = "336-554-7913"
-  propertyEmail = "marketstationmgr@gmail.com"
-  authorName = "Caleb Richelson"
+[params]
+  description = "Welcome to Market Station. Spacious apartments and modern living with amenities you will love. The Greensboro lifestyle you deserve."
+[params.property]
+  phone = "336.294.0913"
+  email = "marketstationmgr@gmail.com"
+[params.property.address]
+  line1 = "5515 West Market St"
+  line2 = "Greensboro, NC 27409"
+  line3 = "United States"

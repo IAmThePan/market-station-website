@@ -1,0 +1,72 @@
+/* Header */
+header {
+  font-family: 'Nunito', sans-serif;
+  background-color: #3c4c5c;
+  padding: 0 20px;
+}
+
+.HeaderContent {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HeaderContent .HeaderContent__HomeLink {
+  max-width: 240px;
+}
+
+.HeaderContent h1 {
+  font-size: 18px;
+  line-height: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.HeaderContent .HeaderContent__MenuLinks {}
+
+.HeaderContent .HeaderContent__MenuLinkContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.HeaderContent .HeaderContent__MenuLink {
+  font-size: 16px;
+  line-height: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  color: rgba(255, 255, 255,.8);
+  margin: 0;
+  padding: 8px 12px;
+  transition: color 0.5s;
+  white-space: nowrap;
+}
+.HeaderContent .HeaderContent__MenuLink:hover,
+.HeaderContent .HeaderContent__MenuLink.HeaderContent--Active {
+  color: rgba(255, 255, 255, 1);
+}
+
+.HeaderContent .HeaderContent__MenuChildren {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  margin: 1.5em 0;
+  line-height: 2em;
+  background-color: #3C4C5C;
+  transition: height 0.2s linear;
+}
+.HeaderContent .HeaderContent__MenuLinkContainer:hover .HeaderContent__MenuChildren {
+  height: 6em;
+}
+
+.HeaderContent .HeaderContent__MenuChild {
+  line-height: 1.5em;
+}
