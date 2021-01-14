@@ -3,19 +3,14 @@ html, body {
   margin: 0;
   padding: 0;
 }
-a {
-  text-decoration: none;
+a { text-decoration: none; }
+
+/* Helper Classes */
+.text-center {
+  text-align: center;
 }
-
-/* Cryptical Theme */
-/*
-Dark Color: #3c4c5c, rgb(60, 76, 92)
-Off White: #fcfbf8, rgb(252, 251, 248)
-Red: #d16d5a, rgb(209, 109, 90)
-*/
-
-body {
-  background-color: #fcfbf8;
+.text-italic {
+  font-style: italic;
 }
 
 /* Page Specific CSS */
@@ -26,3 +21,9 @@ body {
   max-width: 100%;
   height: auto;
 }
+
+/* Cryptical Theme */
+body { background-color: #fcfbf8; }
+/* Dark Color: #3c4c5c, rgb(60, 76, 92) */
+/* Off White: #fcfbf8, rgb(252, 251, 248) */
+/* Red: #d16d5a, rgb(209, 109, 90) */
