@@ -28,7 +28,10 @@ header {
   padding-bottom: 0;
 }
 
-.HeaderContent .HeaderContent__MenuLinks {}
+/* Desktop Menu */
+.HeaderContent .HeaderContent__MenuLinks {
+  display: block;
+}
 
 .HeaderContent .HeaderContent__MenuLinkContainer {
   position: relative;
@@ -69,4 +72,82 @@ header {
 
 .HeaderContent .HeaderContent__MenuChild {
   line-height: 1.5em;
+}
+
+/* Mobile Menu */
+.HeaderContent .HeaderContent__MobileMenu {
+  display: none;
+}
+
+.HeaderContent .HeaderContent__MobileMenuInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.HeaderContent .HeaderContent__HamburgerContainer {
+  display: block;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.HeaderContent .HeaderContent__HamburgerContainer .HeaderContent__Hamburger {
+  position: relative;
+  top: 13px;
+  left: 2.5px;
+}
+.HeaderContent .HeaderContent__HamburgerContainer .HeaderContent__Hamburger:before {
+  content: "";
+  position: absolute;
+  top: -7px;
+}
+.HeaderContent .HeaderContent__HamburgerContainer .HeaderContent__Hamburger:after {
+  content: "";
+  position: absolute;
+  top: 7px;
+}
+.HeaderContent .HeaderContent__HamburgerContainer .HeaderContent__Hamburger,
+.HeaderContent .HeaderContent__HamburgerContainer .HeaderContent__Hamburger:before,
+.HeaderContent .HeaderContent__HamburgerContainer .HeaderContent__Hamburger:after {
+  height: 2px;
+  width: 25px;
+  background-color: rgba(252, 251, 248, 0.8);
+  transition: all 0.2s linear;
+}
+.HeaderContent .HeaderContent__HamburgerContainer:hover .HeaderContent__Hamburger,
+.HeaderContent .HeaderContent__HamburgerContainer:hover .HeaderContent__Hamburger:before,
+.HeaderContent .HeaderContent__HamburgerContainer:hover .HeaderContent__Hamburger:after {
+  background-color: rgba(252, 251, 248, 1);
+}
+
+.HeaderContent .HeaderContent__MobileMenuInput:checked + .HeaderContent__HamburgerContainer .HeaderContent__Hamburger {
+  background-color: rgba(252, 251, 248, 0);
+}
+.HeaderContent .HeaderContent__MobileMenuInput:checked + .HeaderContent__HamburgerContainer .HeaderContent__Hamburger:before {
+  transform: rotate(45deg);
+  transform-origin: 4px 6px;
+}
+.HeaderContent .HeaderContent__MobileMenuInput:checked + .HeaderContent__HamburgerContainer .HeaderContent__Hamburger:after {
+  transform: rotate(-45deg);
+  transform-origin: 5px -3px;
+}
+
+.HeaderContent .HeaderContent__MobileMenuContent {
+  display: none;
+}
+.HeaderContent .HeaderContent__MobileMenuInput:checked ~ .HeaderContent__MobileMenuContent {
+  /* display: block; */
+}
+
+@media (max-width: 1023px) {
+  .HeaderContent .HeaderContent__MenuLinks {
+    display: none;
+  }
+  .HeaderContent .HeaderContent__MobileMenu {
+    display: block;
+  }
 }
