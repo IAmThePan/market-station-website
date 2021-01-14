@@ -115,13 +115,8 @@ header {
 .HeaderContent .HeaderContent__HamburgerContainer .HeaderContent__Hamburger:after {
   height: 2px;
   width: 25px;
-  background-color: rgba(252, 251, 248, 0.8);
+  background-color: #fcfbf8;
   transition: all 0.2s linear;
-}
-.HeaderContent .HeaderContent__HamburgerContainer:hover .HeaderContent__Hamburger,
-.HeaderContent .HeaderContent__HamburgerContainer:hover .HeaderContent__Hamburger:before,
-.HeaderContent .HeaderContent__HamburgerContainer:hover .HeaderContent__Hamburger:after {
-  background-color: rgba(252, 251, 248, 1);
 }
 
 .HeaderContent .HeaderContent__MobileMenuInput:checked + .HeaderContent__HamburgerContainer .HeaderContent__Hamburger {

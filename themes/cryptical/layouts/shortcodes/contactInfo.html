@@ -1,0 +1,6 @@
+<div class="ContactInfo">
+  <div>{{ with .Site.Params.property.address.line1 }}{{ . }}{{ end }}</div>
+  <div>{{ with .Site.Params.property.address.line2 }}{{ . }}{{ end }}</div>
+  <!-- <div>{{ with .Site.Params.property.address.line3 }}{{ . }}{{ end }}</div> -->
+  <div>{{ with .Site.Params.property.phone }}{{ . }}{{ end }}</div>
+</div>

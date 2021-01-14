@@ -1,3 +1,9 @@
-<div class="Button {{ with .Get "theme"}}ButtonTheme__{{.}}{{ end }}">
-  {{ .Get "text" }}
-</div>
+{{ if .Get "link" }}
+  <a href="{{ .Get "link" }}" class="Button{{ with .Get "theme"}} Button--{{ . }}{{ end }}">
+    {{ .Get "text" }}
+  </a>
+{{ else }}
+  <div class="Button{{ with .Get "theme"}} Button--{{ . }}{{ end }}">
+    {{ .Get "text" }}
+  </div>
+{{ end }}

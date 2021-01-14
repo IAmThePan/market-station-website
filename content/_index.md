@@ -7,9 +7,11 @@ menu:
     weight: 100
 ---
 
-{{< button text="View Current Availability" theme="Dark">}}
+{{< figure src="/images/MarketStation.jpg" alt="Market Station Clubhouse" class="HomePage__BannerImage" >}}
 
-{{< figure src="/images/MarketStation.jpg" >}}
+{{< button text="View Current Availability" theme="Dark" link="/apply/" >}}
+
+**Come home to convenient living at Market Station Apartments in Greensboro, NC**
 
 Whether you are taking a class at one of the local universities, contributing to the
 local arts and culture scene or working at Cone Health, Market Station is the perfect
@@ -19,3 +21,7 @@ and plenty of cabinet space. To help you maximize interior space and design pote
 these homes include walk-in closets, as well as huge pantries. With a multitude of
 options available, you can customize your apartment to fit your every need. Take a
 look inside to see everything that Market Station apartments have to offer!
+
+***
+
+{{< contactInfo >}}

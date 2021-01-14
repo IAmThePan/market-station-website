@@ -7,6 +7,7 @@ enableGitInfo = true
 [params]
   description = "Welcome to Market Station. Spacious apartments and modern living with amenities you will love. The Greensboro lifestyle you deserve."
 [params.property]
+  name = "Market Station Apartments"
   phone = "336.294.0913"
   email = "marketstationmgr@gmail.com"
 [params.property.address]

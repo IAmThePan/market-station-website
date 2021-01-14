@@ -1,0 +1,25 @@
+/* Main */
+.MainContent {
+  font-family: 'EB Garamond', serif;
+  max-width: 1023px;
+  margin: 0 auto;
+  padding: 1em 2em;
+  font-size: 18px;
+  line-height: 1.6em;
+  color: #3c4c5c;
+}
+
+.MainContent hr {
+  border: none;
+  border-top: 1px solid rgba(60, 76, 92, 0.15);
+  margin: 32px 0;
+}
+
+.MainContent.MainContent--Centered {
+  text-align: center;
+}
+
+.MainContent.MainContent--ExtraPadding {
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
