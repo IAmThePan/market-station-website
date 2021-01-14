@@ -9,18 +9,19 @@ a {
 
 /* Cryptical Theme */
 /*
-Primary Color: #3C4C5C
-Secondary Color: #F9E9CC
+Dark Color: #3c4c5c, rgb(60, 76, 92)
+Off White: #fcfbf8, rgb(252, 251, 248)
+Red: #d16d5a, rgb(209, 109, 90)
 */
 
 body {
-  background-color: #FCFBF8;
+  background-color: #fcfbf8;
 }
 
 /* Footer */
 footer {
   font-family: 'Nunito', sans-serif;
-  background-color: #3C4C5C;
+  background-color: #3c4c5c;
   padding: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(252, 251, 248, 0.8);
 }

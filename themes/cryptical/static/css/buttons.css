@@ -2,10 +2,8 @@
 .Button--Bold {
   border: 2px solid #d16d5a;
   background-color: #3c4c5c;
-  color: #d16d5a;
   border-radius: 300px;
 }
 .Button--Bold:hover {
   background-color: #d16d5a;
-  color: #3c4c5c;
 }
