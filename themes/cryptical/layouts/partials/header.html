@@ -1,4 +1,7 @@
-<header>
+<header{{ with .Page.Params.headerBackgroundImage }}
+    class="HeaderContent--Long"
+    style="background-image: url('/images/{{ . }}')"
+{{ end }}>
   <div class="HeaderContent">
     <a class="HeaderContent__HomeLink" href="/">
       <h1>{{ .Site.Title }}</h1>
