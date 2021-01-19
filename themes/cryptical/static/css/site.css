@@ -12,6 +12,9 @@ a { text-decoration: none; }
 .text-italic {
   font-style: italic;
 }
+.hidden {
+  display: none;
+}
 .flex-container {
   display: flex;
 }

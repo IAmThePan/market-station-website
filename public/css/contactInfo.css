@@ -1,0 +1,9 @@
+/* ContactInfo */
+.ContactInfo {
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.6em;
+  color: #3c4c5c;
+}

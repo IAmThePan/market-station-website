@@ -1,0 +1,97 @@
+/* Normalize */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+a { text-decoration: none; }
+
+/* Helper Classes */
+.text-center {
+  text-align: center;
+}
+.text-italic {
+  font-style: italic;
+}
+.hidden {
+  display: none;
+}
+.flex-container {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.align-center-middle {
+  align-items: center;
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-around {
+  justify-content: space-around;
+}
+
+/* Page Specific CSS */
+.HomePage__BannerImage {
+  margin: 1em 0;
+}
+.HomePage__BannerImage img {
+  max-width: 100%;
+  height: auto;
+}
+.HelpSection ~ p {
+  margin: 0.75em 0;
+}
+.HelpSection ~ p a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  color: #d16d5a;
+}
+
+.FloorPlans__Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.FloorPlans__Container figure {
+  flex: 1 0 34%;
+  margin: 0 0.5em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.FloorPlans__Container figure img {
+  margin: 0 auto;
+  height: 150px;
+}
+.FloorPlans__Container figcaption {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Cryptical Theme */
+body { background-color: #fcfbf8; }
+/* Dark Color: #3c4c5c, rgb(60, 76, 92) */
+/* Off White: #fcfbf8, rgb(252, 251, 248) */
+/* Red: #d16d5a, rgb(209, 109, 90) */
+
+@media (max-width: 680px) {
+  .flex-wrap-small {
+    flex-wrap: wrap;
+  }
+  .flex-wrap-small h4,
+  .flex-wrap-small a {
+    flex-basis: 100%;
+  }
+}
+
+@media ( max-width: 680px) {
+  .FloorPlans__Container figure {
+    flex-basis: 51%;
+  }
+}

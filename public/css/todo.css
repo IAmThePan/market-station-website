@@ -1,0 +1,7 @@
+/*
+ * ToDo: Convert CSS to SCSS and compile all theme SCSS files into one CSS file for import
+ * ToDo: Separate Theme CSS from Site CSS (diferentiate along Classes used in Theme/Not)
+ *       Shortcode classes not used in theme should be defined in site's CSS only
+ *       Define all Helper Classes in Site CSS only.
+ * ToDo: Create a colors.scss file in the Site Folder that the Theme can use.
+ */
