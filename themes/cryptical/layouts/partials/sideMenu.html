@@ -1,0 +1,19 @@
+{{ $currentPage := . }}
+{{ if eq .Page.Section "apartments" }}
+<div class="SideMenu">
+  <input class="SideMenu__CollapseInput" id="SideMenu__Input" type="checkbox" />
+  <label for="SideMenu__Input" class="SideMenu__CollapseLabel">
+    <span class="SideMenu__ButtonOpen">+</span>
+    <span class="SideMenu__ButtonClose">-</span>
+  </label>
+  <div class="SideMenu__Content">
+    <div class="SideMenu__Section">{{ .Page.Section }}</div>
+    {{ range .Site.Menus.apartments }}
+    <a href="{{ .URL }}" class="SideMenu__Page
+        {{- if $currentPage.IsMenuCurrent "apartments" . }} SideMenu--Active{{- end }}">
+      {{ .Name }}
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

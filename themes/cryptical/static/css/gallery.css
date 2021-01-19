@@ -1,0 +1,14 @@
+/* Gallery */
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  height: 2800px;
+}
+
+.Gallery img {
+  width: 32%;
+  margin: 0.25em 0.25em;
+}

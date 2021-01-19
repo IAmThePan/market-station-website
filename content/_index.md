@@ -1,17 +1,19 @@
 ---
 title: "Home"
 date: 2021-01-05T13:01:57-05:00
-draft: true
+mainClass: "text-center"
 menu:
   header:
     weight: 100
 ---
 
+## Market Station: Modern Living
+
 {{< figure src="/images/MarketStation.jpg" alt="Market Station Clubhouse" class="HomePage__BannerImage" >}}
 
 {{< button text="View Current Availability" theme="Dark" link="/apply/" >}}
 
-**Come home to convenient living at Market Station Apartments in Greensboro, NC**
+**The Greensboro lifestyle you deserve & amenities you'll love**
 
 Whether you are taking a class at one of the local universities, contributing to the
 local arts and culture scene or working at Cone Health, Market Station is the perfect

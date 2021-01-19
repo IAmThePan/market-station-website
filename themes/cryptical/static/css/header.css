@@ -52,12 +52,12 @@ header.HeaderContent--Long {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0px;
-  color: rgba(252, 251, 248, 0.8);
+  color: rgba(252, 251, 248, 0.6);
   text-shadow: 1px 1px #3c4c5c;
   margin: 0;
   padding: 8px 12px;
-  transition: all 0.2s linear;
   white-space: nowrap;
+  transition: all 0.2s linear;
 }
 .HeaderContent .HeaderContent__MenuLink:hover,
 .HeaderContent .HeaderContent__MenuLink.HeaderContent--Active {
@@ -142,9 +142,25 @@ header.HeaderContent--Long {
 
 .HeaderContent .HeaderContent__MobileMenuContent {
   display: none;
+  position: absolute;
+  top: 5em;
+  left: 0;
+  width: 100%;
+  background-color: #3c4c5c;
+  padding: 0 1em 1em 0;
 }
 .HeaderContent .HeaderContent__MobileMenuInput:checked ~ .HeaderContent__MobileMenuContent {
-  /* display: block; */
+  display: flex;
+}
+.HeaderContent .HeaderContent__MobileMenuContent .HeaderContent__MenuLinkContainer {
+  display: block;
+  margin: 0.5em;
+}
+.HeaderContent .HeaderContent__MobileMenuContent .HeaderContent__MenuChild {
+  padding-left: 2em;
+}
+.HeaderContent .HeaderContent__MobileMenuForceRight {
+  flex-grow: 1;
 }
 
 @media (max-width: 1023px) {

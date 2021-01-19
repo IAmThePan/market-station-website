@@ -1,7 +1,6 @@
 ---
 title: "Apply"
 date: 2021-01-04T09:51:11-05:00
-draft: true
 menu:
   header:
     weight: 400
@@ -20,5 +19,5 @@ menu:
 - Non-refunable Applicant fee via Credit or Debit Card
 
 {{< addClass class="text-center text-italic" >}}
-A separate application is required for each potential resident over the age of 17
+  A separate application is required for each potential resident over the age of 17
 {{< /addClass >}}

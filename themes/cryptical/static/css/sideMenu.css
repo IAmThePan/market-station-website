@@ -1,0 +1,65 @@
+/* Side Menu */
+.SideMenu {
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 18px;
+  padding: 1em 2em;
+  overflow: hidden;
+}
+
+.SideMenu .SideMenu__Content {
+  text-align: left;
+}
+
+.SideMenu .SideMenu__Section {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 400;
+  color: #d16d5a;
+  line-height: 1.6em;
+}
+
+.SideMenu .SideMenu__Page {
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.8em;
+  color: rgba(60, 76, 92, 0.6);
+  transition: color 0.2s linear;
+}
+.SideMenu .SideMenu__Page:hover,
+.SideMenu .SideMenu__Page.SideMenu--Active {
+  color: #3c4c5c;
+}
+
+.SideMenu .SideMenu__CollapseInput,
+.SideMenu .SideMenu__CollapseLabel,
+.SideMenu .SideMenu__ButtonOpen,
+.SideMenu .SideMenu__ButtonClose {
+  display: none;
+}
+
+@media (max-width: 880px) {
+  .Main {
+    flex-direction: column;
+  }
+  /* ToDo: Add transition to opening/closing the menu */
+  .SideMenu .SideMenu__CollapseLabel {
+    display: block;
+    text-align: right;
+    font-size: 18px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+  }
+  .SideMenu .SideMenu__CollapseInput:not(:checked) + .SideMenu__CollapseLabel .SideMenu__ButtonOpen,
+  .SideMenu .SideMenu__CollapseInput:checked + .SideMenu__CollapseLabel .SideMenu__ButtonClose {
+    display: block;
+  }
+  .SideMenu .SideMenu__CollapseInput:not(:checked) ~ .SideMenu__Content {
+    display: none;
+  }
+}

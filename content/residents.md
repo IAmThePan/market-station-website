@@ -1,8 +1,7 @@
 ---
 title: "Resident Portal"
 date: 2021-01-04T09:51:11-05:00
-draft: true
-headerBackgroundImage: "residents.jpg"
+headerImage: "residents.jpg"
 menu:
   header:
     weight: 500
@@ -10,7 +9,7 @@ menu:
 
 ***
 
-{{< addClass class="flex align-center space-around flex-wrap-small">}}
+{{< addClass class="flex-container align-center space-around flex-wrap-small">}}
   <h4>Resident Login:</h4>
   {{< button text="Online Payments" theme="Dark" link="https://mbrealestate1.appfolio.com/connect/users/sign_in" >}}
   {{< button text="Maintenance Requests" theme="Dark" link="https://mbrealestate1.appfolio.com/connect/users/sign_in" >}}

@@ -1,0 +1,12 @@
+<div class="Gallery">
+  {{ with .Get "dir" }}
+    {{ $dir := . }}
+    {{ $files := readDir (print "static" .) }}
+    {{ range $files }}
+      {{ $isImg := lower .Name | findRE "\\.(gif|jpg|jpeg|tiff|png|bmp)" }}<!-- is the current file an image? -->
+      {{ if $isImg }}
+        <img src='{{ $dir }}/{{ .Name }}' />
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</div>
