@@ -1,25 +1,35 @@
 The goal of this project is to build a website for the Market Station Apartment Complex.
 
 Directory of Pages:
-- [ ] HomePage
+- [x] HomePage
+  - [ ] Do you want a title?
 Apartments
-  - [ ] Floor Plans
-  - [ ] Amenities
+  - [/] Floor Plans (make images bigger and gallery-like)
+    - [ ] Do you want the SQ.FT. listed below the image?
+    - [ ] Do you want slightly longer text below the images to better fill the space?
+    - [ ] Make the floor plans gallery like.
+    - [ ] Get new floor plan images.
+  - [x] Amenities
+    - [ ] Do you want more categories?
+    - [ ] Are there more amenities to add?
+    - [ ] Change the layout of the categories to match Citrus Meadows?
+    - [ ] Add a photo gallery beneath each category.
   - [ ] Location
-- [ ] Photo Gallery
-- [ ] Apply (includes iFrame to AppFolio Page)
-- [ ] Resident Portal with AppFolio links
-- [ ] Contact Us (includes a form)
+    - [ ] Market Station text to replace Citrus Meadows's filler text.
+- [/] Photo Gallery
+  - [ ] Be more selective about which photos to include
+  - [ ] Click to enlarge photo
+  - [ ] Click/L&R to scroll enlarged photos
+  - [ ] Better photo gallery layout.
+- [/] Apply (includes iFrame to AppFolio Page)
+  - [ ] Need the Market Station AppFolio link.
+  - [ ] Is the list of "When applying..." complete?
+- [x] Resident Portal
+  - [ ] Are all the links correct?
+- [ ] Contact Us
+  - [ ] Do you really want a contact us form?
+  - [ ] Is the Map OK?
 
 Questions for Property Manager:
-- [ ] Do you own a domain name for the property, can I use it? Should I buy one?
-- [ ] Do you have a color scheme or theme that you use around the property for handouts or official communication?
-Resources that I need:
-  - [ ] AppFolio links
-  - [ ] Photos of the property
-  - [ ] Floor Plans
-  - [ ] List of Amenities
-  - [ ] Address and blurb about location
-  - [ ] Phone number and email.
-- [ ] What happens when I submit the form on the Contact Us page?
+- [ ] What domain name should I buy to use with the site?
 - [ ] Do you want a page in Spanish as well as English?
