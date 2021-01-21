@@ -2,13 +2,118 @@
 .Gallery {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items:flex-start;
   justify-content: center;
-  height: 2800px;
 }
 
-.Gallery img {
-  width: 32%;
-  margin: 0.25em 0.25em;
+.Gallery__Item {
+  display: block;
+  height: 150px;
+  padding: 0.25em 0.125em;
+}
+
+.Gallery__Input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.Gallery__Thumbnail {
+  height: 100%;
+}
+
+.Gallery__FullSize {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.Gallery input:checked ~ .Gallery__FullSize {
+  display: flex;
+}
+
+.Gallery__FullSize img {
+  max-height: 96vh;
+  max-width: 96vw;
+}
+
+.Gallery__Previous,
+.Gallery__Next {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.Gallery__Previous {
+  right: 50%;
+  justify-content: flex-start;
+}
+.Gallery__Next {
+  left: 50%;
+  justify-content: flex-end;
+}
+
+.Gallery__Previous:before,
+.Gallery__Next:after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  margin: 2vh 2vw;
+  border-bottom: 2px solid rgba(60, 76, 92, 0.6);
+  border-left: 2px solid rgba(60, 76, 92, 0.6);
+  transition: border-color 0.2s linear;
+}
+.Gallery__Previous:hover:before,
+.Gallery__Next:hover:after {
+  border-color: rgba(60, 76, 92, 1);
+}
+.Gallery__Previous:before {
+  transform: rotate(45deg);
+}
+.Gallery__Next:after {
+  transform: rotate(225deg);
+}
+
+.Gallery__Close {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2vh;
+  right: 2vw;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.Gallery__Close:before,
+.Gallery__Close:after {
+  content: "";
+  position: absolute;
+  flex-shrink: 0;
+  height: 2px;
+  width: 30px;
+  background-color: rgba(60, 76, 92, 0.6);
+  transition: background-color 0.2s linear;
+}
+.Gallery__Close:hover:before,
+.Gallery__Close:hover:after {
+  background-color: rgba(60, 76, 92, 1);
+}
+.Gallery__Close:before {
+  transform: rotate(45deg);
+}
+.Gallery__Close:after {
+  transform: rotate(135deg);
 }

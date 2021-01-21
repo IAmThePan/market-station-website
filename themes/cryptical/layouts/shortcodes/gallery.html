@@ -2,11 +2,65 @@
   {{ with .Get "dir" }}
     {{ $dir := . }}
     {{ $files := readDir (print "static" .) }}
-    {{ range $files }}
+    {{ $len := len $files }}
+    {{ range $i, $e := $files }}
       {{ $isImg := lower .Name | findRE "\\.(gif|jpg|jpeg|tiff|png|bmp)" }}<!-- is the current file an image? -->
       {{ if $isImg }}
-        <img src='{{ $dir }}/{{ .Name }}' />
+
+        {{ $prv := sub $i 1 }}
+        {{ if eq $prv -1 }}
+          {{ $prv = sub $len 1 }}
+        {{ end }}
+
+        {{ $nxt := add $i 1 }}
+        {{ if eq $nxt $len }}
+          {{ $nxt = 0 }}
+        {{ end }}
+
+        <div class="Gallery__Item">
+          <input type="radio" id="Gallery__{{ $dir }}__Radio__{{ $i }}" name="Gallery__{{ $dir }}" class="Gallery__Input" />
+          <label for="Gallery__{{ $dir }}__Radio__{{ $i }}" class="Gallery__Item">
+            <img class="Gallery__Thumbnail" src='{{ $dir }}/{{ .Name }}' />
+          </label>
+          <div class="Gallery__FullSize">
+            <img src="{{ $dir }}/{{ .Name }}" />
+            <label for="Gallery__{{ $dir }}__Radio__{{ $prv }}" class="Gallery__Previous"></label>
+            <label for="Gallery__{{ $dir }}__Radio__{{ $nxt }}" class="Gallery__Next"></label>
+            <label for="Gallery__{{ $dir }}__Radio__None" class="Gallery__Close"></label>
+          </div>
+        </div>
       {{ end }}
     {{ end }}
+    <input type="radio" id="Gallery__{{ $dir }}__Radio__None" name="Gallery__{{ $dir }}" class="Gallery__Input" />
+    <script>
+      document.addEventListener("keydown", e => {
+        const inputNone = document.getElementById("Gallery__{{ $dir }}__Radio__None");
+        if (inputNone.checked) {
+          return;
+        }
+
+        const { keyCode } = e;
+        if (keyCode === 27) {
+          inputNone.checked = true;
+          return;
+        }
+
+        const inputSelect = document.querySelector('input.Gallery__Input[name="Gallery__{{ $dir }}"][type="radio"]:checked');
+        let inputNum = +inputSelect.id.replace('Gallery__{{ $dir }}__Radio__', '');
+        if (keyCode === 39) {
+          inputNum++;
+          if (inputNum >= {{ $len }}) {
+            inputNum = 0;
+          }
+        } else if (keyCode === 37) {
+          inputNum--;
+          if (inputNum === -1) {
+            inputNum = {{ sub $len 1 }};
+          }
+        }
+        const inputTo = document.getElementById(`Gallery__${ {{ $dir }} }__Radio__${ inputNum }`);
+        inputTo.checked = true;
+      });
+    </script>
   {{ end }}
 </div>
