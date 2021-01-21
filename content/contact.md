@@ -12,7 +12,7 @@ menu:
 
 {{< contactInfo >}}
 
-*Our leasing office is open Monday- Friday, 9:00am to 4:00pm*
+*Our leasing office is open Monday- Friday, 8:30am to 5:30pm*
 
 {{< iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDU3vr9H2kUSnkmkvgWmxSNNl60NbV8U9Q&q=Market%20Station%20Apartments,%20West%20Market%20Street" height="500px" width="100%" >}}
 

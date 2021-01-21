@@ -16,17 +16,18 @@ menu:
 
 {{< iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDU3vr9H2kUSnkmkvgWmxSNNl60NbV8U9Q&q=Market%20Station%20Apartments,%20West%20Market%20Street" height="500px" width="100%" >}}
 
-**Citrus Meadows copy, update with copy for Market Station**
-The coastal city of Bradenton, Florida resides on the banks of the Manatee River just 45 miles south
-of Tampa and 25 miles south of St. Petersburg, crossing over the iconic Sunshine Skyway Bridge. Bradenton
-is home to the Bradenton Marauders at LECOM Park where residents and tourists alike gather for baseball
-games and events. The South Florida Museum is a huge hit with families complete with a planetarium,
-aquarium, and history museum. If you’re looking for restored historical buildings, be sure to visit the
-Manatee Village Historical Park, where you’ll find artifacts on pioneer life in Florida.
+Greensboro, located in the heart of North Carolina’s Triad region, offers everything
+that much larger cities have, while maintaining a small town feel and a low cost of
+living. With 50,000 college students attending one of the city's seven colleges and
+universities, Greensboro enjoys myriad entertainment choices: college and professional
+sports, unique restaurants, craft breweries, arts, and music. Greensboro also boasts
+more than 90 miles of trails and greenways.
 
-Residents enjoy browsing the Red Barn Flea Market, as well golfing at River Run Golf Links or Pinebrook
-Ironwood Golf Course. Community parks are abundant, and the city even has a dog park, Happy Tails Dog Park,
-at G.T. Bray Park. Visit the Riverwalk for open green space, a community amphitheater, kid-friendly splash
-park, and picturesque views of Manatee River. Enjoy a cold craft brew at Motorworks Brewing, Bradenton’s
-first craft brewery. Find your ideal apartment at Citrus Meadows Apartments and begin enjoying its scenic
-views and plentiful amenities!
+And Market Station is convenient to everything. Located on West Market Street, the
+property is close to I-40 and I-73, providing easy access to  PTI Airport, Friendly
+Center, and all of Greensboro’s and the greater Triad area's major employers. The
+downtowns of both Greensboro and High Point are within 15 minutes, and Winston Salem
+is just five minutes further. There’s also plenty of shopping nearby, and the Greenboro
+Transit Bus Line stops right out front.
+
+**Come by Market Station and see everything we have to offer.**
