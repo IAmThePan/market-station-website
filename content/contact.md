@@ -8,13 +8,17 @@ menu:
     weight: 600
 ---
 
-# Market Station Apartments
+# Contact Us
+
+Phone
+Email: marketstation manager or marketstationleasing
+address/map
 
 {{< contactInfo >}}
 
 *Our leasing office is open Monday- Friday, 8:30am to 5:30pm*
 
-{{< iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDU3vr9H2kUSnkmkvgWmxSNNl60NbV8U9Q&q=Market%20Station%20Apartments,%20West%20Market%20Street" height="500px" width="100%" >}}
+{{< iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDU3vr9H2kUSnkmkvgWmxSNNl60NbV8U9Q&q=Market%20Station%20Apartments,%20West%20Market%20Street&zoom=14" height="500px" width="100%" >}}
 
 ***
 

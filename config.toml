@@ -1,6 +1,6 @@
-baseURL = "http://brothersaloof.com"
+baseURL = "https://marketstationapartmentsnc.com"
 languageCode = "en-us"
-title = "Market Station Apartments | Greensboro, NC"
+title = "Market Station Apartments Greensboro, NC"
 theme = "cryptical"
 enableGitInfo = true
 publishDir = "docs"
@@ -14,4 +14,3 @@ publishDir = "docs"
 [params.property.address]
   line1 = "5515 West Market St"
   line2 = "Greensboro, NC 27409"
-  line3 = "United States"

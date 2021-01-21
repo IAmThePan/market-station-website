@@ -11,10 +11,10 @@ menu:
 ---
 
 {{< addClass class="FloorPlans__Container" >}}
-  {{< figure src="/images/floorPlans/Studio.png" caption="Studio / 1 Bathroom (407-432 SQ.FT)" >}}
-  {{< figure src="/images/floorPlans/StudioDelux.png" caption="Studio Delux / 1 Bathroom (490-505 SQ.FT)" >}}
-  {{< figure src="/images/floorPlans/1Bedroom.png" caption="1 Bedroom / 1 Bathroom (602-617 SQ.FT)" >}}
-  {{< figure src="/images/floorPlans/2Bedroom.png" caption="2 Bedroom / 2 Bathroom (832-847 SQ.FT)" >}}
+  {{< figure src="/images/floorPlans/Studio.png" caption="Studio" >}}
+  {{< figure src="/images/floorPlans/StudioDelux.png" caption="Studio Delux" >}}
+  {{< figure src="/images/floorPlans/1Bedroom.png" caption="1 Bedroom" >}}
+  {{< figure src="/images/floorPlans/2Bedroom.png" caption="2 Bedroom / 2 Bathroom" >}}
 {{< /addClass >}}
 
 
