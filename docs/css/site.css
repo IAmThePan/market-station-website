@@ -9,8 +9,14 @@ a { text-decoration: none; }
 .text-center {
   text-align: center;
 }
+.text-left {
+  text-align: left !important;
+}
 .text-italic {
   font-style: italic;
+}
+.center-next + * {
+  text-align: center;
 }
 .hidden {
   display: none;

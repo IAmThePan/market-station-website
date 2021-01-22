@@ -21,4 +21,4 @@ menu:
 
 [Oops, I forgot my password](https://crypticalstation.appfolio.com/connect/users/password/new)
 
-[I need to set up an account](mailto:marketstationmgr@gmail.com)
+[I need to set up an account](mailto:{{< propertyEmail >}})

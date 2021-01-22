@@ -48,6 +48,9 @@
   font-size: 18px;
   font-weight: 600;
 }
+.MainContent h3 a {
+  color: #d16d5a;
+}
 
 .MainContent h4 {
   font-family: 'Nunito', sans-serif;
