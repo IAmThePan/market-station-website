@@ -4,13 +4,13 @@ Directory of Pages:
 - [x] HomePage
 Apartments
   - [ ] Floor Plans
-    - [ ] Make images bigger when you click on them
-    - [ ] Get new floor plan images.
-    - [ ] Make it so the page doesn't get extended on mobile.
+    - [o] Get new floor plan images.
+    - [ ] Me: Make it so the page doesn't get extended on mobile.
+    - [ ] Me: Make images bigger when you click on them
   - [x] Amenities
   - [x] Location
 - [ ] Photo Gallery
-  - [ ] Be more selective about which photos to include
+  - [o] Be more selective about which photos to include
   - [x] Add thumbnails and use in gallery
   - [x] Click thumbnail to show enlarged photo
   - [x] Click to scroll enlarged photos
@@ -18,24 +18,24 @@ Apartments
   - [x] Better photo gallery layout.
   - ToDo: How do I put all the Gallery Photos inside an `/images` folder and access them with `.Page.Resources`?
 - [ ] Apply
-  - [ ] Need the Market Station AppFolio link.
-  - [ ] Is the list of "When applying..." complete?
+  - [o] Need the Market Station AppFolio link.
+  - [o] Is the list of "When applying..." complete?
 - [ ] Resident Portal
-  - [ ] Are all the links correct?
+  - [o] Are all the links correct?
 - [ ] Contact Us
-  - [ ] Ask Cheryl for order of Email / Phone / Address & Map
-  - [ ] Ask Cheryl about whether she wants a contact us form
+  - [o] Ask Cheryl for order of Email / Phone / Address & Map
+  - [o] Ask Cheryl about whether she wants a contact us form
 
 Questions for Property Manager:
 - [x] purchased marketstationapartmentsnc.com
-- [ ] Do you want a page in Spanish as well as English?
+- [o] Do you want a page in Spanish as well as English?
 
-ToDos:
+My ToDos:
 - [ ] Make the mobile header menu open with a transition
 - [ ] Make the mobile apartments menu open with a transition
 - Gallery:
-  - [ ] Scroll between gallery photos with a transition
   - [ ] Rename photos in Gallery
+  - [ ] Scroll between gallery photos with a transition
 - [ ] Move static images to content folder
 - [ ] Update / Verify site.webmanifest saves website correctly
 - [ ] Add an og:image property in head
@@ -52,6 +52,3 @@ ToDos:
   - [ ] Create a colors.scss file in the Site Folder that the Theme can use.
   - [ ] Import ShortCode CSS from Shortcode, and limit import to one time
   - [ ] Use the same Header Menu Links in big and on mobile
-
-
-Other ToDos:
