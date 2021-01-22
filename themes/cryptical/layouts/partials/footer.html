@@ -6,20 +6,20 @@
     <div>
       {{ if .Site.Params.property.address }}
         <span class="FooterContent--Bold">Address:</span>
-        {{ with .Site.Params.property.address.line1 }}{{ . }}{{ end }}
-        {{- with .Site.Params.property.address.line2 }}, {{ . }}{{- end }}
-      {{ end }}
-    </div>
-    <div>
-      {{ with .Site.Params.property.email }}
-        <span class="FooterContent--Bold">Email:</span>
-        {{ . }}
+          {{ with .Site.Params.property.address.line1 }}{{ . }}{{ end }}
+          {{- with .Site.Params.property.address.line2 }}, {{ . }}{{- end }}
       {{ end }}
     </div>
     <div rel="tel">
       {{ with .Site.Params.property.phone }}
         <span class="FooterContent--Bold">Phone:</span>
-        {{ . }}
+        <a class="FooterContent--Normal" href="tel:{{ . }}">{{ . }}</a>
+      {{ end }}
+    </div>
+    <div>
+      {{ with .Site.Params.property.email }}
+        <span class="FooterContent--Bold">Email:</span>
+        <a class="FooterContent--Normal" href="mailto:{{ . }}">{{ . }}</a>
       {{ end }}
     </div>
     <div class="FooterContent--Dull FooterContent--PadTop hidden">

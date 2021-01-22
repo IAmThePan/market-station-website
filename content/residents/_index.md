@@ -11,14 +11,14 @@ menu:
 
 {{< addClass class="flex-container align-center space-around flex-wrap-small">}}
   <h4>Resident Login:</h4>
-  {{< button text="Online Payments" theme="Dark" link="https://mbrealestate1.appfolio.com/connect/users/sign_in" >}}
-  {{< button text="Maintenance Requests" theme="Dark" link="https://mbrealestate1.appfolio.com/connect/users/sign_in" >}}
+  {{< button text="Online Payments" theme="Dark" link="https://crypticalstation.appfolio.com/connect/users/sign_in" >}}
+  {{< button text="Maintenance Requests" theme="Dark" link="https://crypticalstation.appfolio.com/connect/users/sign_in" >}}
 {{< /addClass >}}
 ***
 
 #### Help: { class="HelpSection" }
 [How do I use my Online Portal?](https://www.appfolio.com/help/online-portal-overview)
 
-[Oops, I forgot my password](https://mbrealestate1.appfolio.com/connect/users/password/new)
+[Oops, I forgot my password](https://crypticalstation.appfolio.com/connect/users/password/new)
 
-[I need to set up an account](mailto:citrusmeadowsmgr@gmail.com)
+[I need to set up an account](mailto:marketstationmgr@gmail.com)

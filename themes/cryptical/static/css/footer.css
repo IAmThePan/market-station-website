@@ -23,6 +23,12 @@ footer {
   font-size: 1.125em;
 }
 
+.FooterContent .FooterContent--Normal,
+.FooterContent .FooterContent--Normal a {
+  text-decoration: none;
+  color: rgba(252, 251, 248, 0.6);
+}
+
 .FooterContent .FooterContent--Dull,
 .FooterContent .FooterContent--Dull a {
   text-decoration: none;

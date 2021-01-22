@@ -5,12 +5,14 @@ Directory of Pages:
 Apartments
   - [ ] Floor Plans
     - [o] Get new floor plan images.
+      - [ ] Cheryl will look for them
+      - [ ] In the meantime I will edit the existing photos.
     - [ ] Me: Make it so the page doesn't get extended on mobile.
     - [ ] Me: Make images bigger when you click on them
   - [x] Amenities
   - [x] Location
-- [ ] Photo Gallery
-  - [o] Be more selective about which photos to include
+- [x] Photo Gallery
+  - [x] Be more selective about which photos to include
   - [x] Add thumbnails and use in gallery
   - [x] Click thumbnail to show enlarged photo
   - [x] Click to scroll enlarged photos
@@ -18,13 +20,16 @@ Apartments
   - [x] Better photo gallery layout.
   - ToDo: How do I put all the Gallery Photos inside an `/images` folder and access them with `.Page.Resources`?
 - [ ] Apply
-  - [o] Need the Market Station AppFolio link.
-  - [o] Is the list of "When applying..." complete?
+  - [x] Need the Market Station AppFolio link.
+  - [x] Verify "When applying..." info is complete.
 - [ ] Resident Portal
-  - [o] Are all the links correct?
+  - [x] Are all the links correct?
+  - [ ] Me: have email pull from config.toml
 - [ ] Contact Us
-  - [o] Ask Cheryl for order of Email / Phone / Address & Map
-  - [o] Ask Cheryl about whether she wants a contact us form
+  - [x] Order: Phone, Email, Address & Map
+  - [x] Contact Form not necessary
+- [ ] Footer
+    - [ ] Make links clickable
 
 Questions for Property Manager:
 - [x] purchased marketstationapartmentsnc.com
@@ -52,3 +57,6 @@ My ToDos:
   - [ ] Create a colors.scss file in the Site Folder that the Theme can use.
   - [ ] Import ShortCode CSS from Shortcode, and limit import to one time
   - [ ] Use the same Header Menu Links in big and on mobile
+
+
+  Ryan Geller - Get Appfolio links from Ryan
