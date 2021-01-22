@@ -1,6 +1,6 @@
-<header{{ with .Page.Params.headerImage }}
+<header{{ with .Page.Resources.GetMatch "banner.jpg" }}
     class="HeaderContent--Long"
-    style="background-image: url('/images/stock/{{ . }}')"
+    style="background-image: url('{{ .RelPermalink }}')"
 {{ end }}>
   <div class="HeaderContent">
     <a class="HeaderContent__HomeLink" href="/">
