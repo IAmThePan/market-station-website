@@ -5,12 +5,6 @@
   justify-content: center;
 }
 
-.Gallery__Item {
-  display: block;
-  height: 150px;
-  padding: 0.25em 0.125em;
-}
-
 .Gallery__Input {
   position: absolute;
   top: 0;
@@ -19,6 +13,12 @@
   width: 0;
   opacity: 0;
   pointer-events: none;
+}
+
+.Gallery__Label {
+  display: block;
+  height: 150px;
+  padding: 0.25em 0.25em;
 }
 
 .Gallery__Thumbnail {

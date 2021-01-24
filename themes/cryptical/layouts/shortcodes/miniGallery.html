@@ -1,3 +1,20 @@
 <div class="MiniGallery">
-  {{ .Inner }}
+  {{ $name := or (.Get "name") "DefaultMiniGallery" }}
+  {{ with .Page.Resources.ByType "image" }}
+    {{ range $i, $e := . }}
+      {{ $imageThumbnail := $e.Resize "x300" }}
+
+      <div class="MiniGallery__Item">
+        <input type="checkbox" id="MiniGallery__{{ $name }}__Checkbox__{{ $i }}" name="MiniGallery__{{ $name }}" class="MiniGallery__Input" />
+        <label for="MiniGallery__{{ $name }}__Checkbox__{{ $i }}" class="MiniGallery__Label">
+          <img class="MiniGallery__Thumbnail" src='{{ $imageThumbnail.RelPermalink }}' />
+          <p class="MiniGallery__ThumbnailCaption">{{ substr .Name 2 -4 }}</p>
+        </label>
+        <div class="MiniGallery__FullSize">
+          <img src="{{ $e.RelPermalink }}" />
+          <label for="MiniGallery__{{ $name }}__Checkbox__{{ $i }}" class="Gallery__Close"></label>
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
 </div>
