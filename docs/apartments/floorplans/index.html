@@ -290,6 +290,15 @@
         </div>
       </div>
     
+    <script>
+      document.addEventListener("keydown", e => {
+        const inputSelect = document.querySelector('input.MiniGallery__Input[name="MiniGallery__FloorPlanGallery"][type="checkbox"]:checked');
+        const { keyCode } = e;
+        if (keyCode === 27) {
+          inputSelect.checked = false;
+        }
+      });
+    </script>
   
 </div>
 
