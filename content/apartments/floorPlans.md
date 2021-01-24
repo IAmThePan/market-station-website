@@ -10,12 +10,12 @@ menu:
     weight: 100
 ---
 
-{{< addClass class="FloorPlans__Container" >}}
+{{< miniGallery >}}
   {{< figure src="/images/floorPlans/Studio.png" caption="Studio" >}}
   {{< figure src="/images/floorPlans/StudioDelux.png" caption="Studio Delux" >}}
   {{< figure src="/images/floorPlans/1Bedroom.png" caption="1 Bedroom" >}}
   {{< figure src="/images/floorPlans/2Bedroom.png" caption="2 Bedroom / 2 Bathroom" >}}
-{{< /addClass >}}
+{{< /miniGallery >}}
 
 
 Each residence at Market Station has its own front door for maximum privacy

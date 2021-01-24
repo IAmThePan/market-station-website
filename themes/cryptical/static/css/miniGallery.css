@@ -1,0 +1,27 @@
+/* Mini Gallery */
+.MiniGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.MiniGallery figure {
+  flex: 1 0 34%;
+  margin: 0 0.5em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.MiniGallery figure img {
+  margin: 0 auto;
+  height: 150px;
+}
+.MiniGallery figcaption {
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 680px) {
+  .MiniGallery figure {
+    flex-basis: 51%;
+  }
+}
