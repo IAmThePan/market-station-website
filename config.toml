@@ -2,11 +2,10 @@ baseURL = "https://marketstationapartmentsnc.com"
 languageCode = "en-us"
 title = "Market Station Apartments Greensboro, NC"
 theme = "cryptical"
-enableGitInfo = true
 publishDir = "docs"
 
 [params]
-  description = "Welcome to Market Station. Spacious apartments and modern living with amenities you will love. The Greensboro lifestyle you deserve."
+  description = "Welcome to Market Station Apartments, spacious apartments at an affordable price. Conveniently located with lots of Amenities."
 [params.property]
   name = "Market Station Apartments"
   phone = "336.294.0913"

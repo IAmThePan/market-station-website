@@ -7,6 +7,10 @@ menu:
     URL: "/apartments/floorplans"
 ---
 
+*Whoops, there is nothing here. Please navigate to a different page.*
+
+<!--
 This page exists to:
 1. Ensure 'Apartments' appears in the Header Menu
 2. Ensure the Header Menu links to the Floor Plans page
+-->

@@ -47,7 +47,6 @@
   .Main {
     flex-direction: column;
   }
-  /* ToDo: Add transition to opening/closing the menu */
   .SideMenu .SideMenu__CollapseLabel {
     display: block;
     text-align: right;
