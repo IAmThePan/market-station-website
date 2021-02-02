@@ -4,8 +4,6 @@
   font-size: $mobile-nav-font-size;
 
   .Navigation__LinkContainer {
-    margin: 0.5em;
-
     &:hover .Navigation__Link {
       color: $primary-complement;
     }
@@ -30,21 +28,12 @@
   }
 }
 
-// ToDo: do this better, especially the button
 .Navigation.NavigationSidebar {
-  .Navigation__Link {
-    line-height: 2em;
-    &.Navigation--IsChild {
-      line-height: 1.5em;
-    }
-    &.Button,
-    &.Navigation--IsChild.Button {
-      line-height: 1.4em;
-    }
+  .Navigation__LinkContainer,
+  .NavigationSidebar__Child {
+    margin: 1em 0.5em;
   }
-}
 
-.Navigation.NavigationSidebar {
   .NavigationSidebar__ParentLink:before {
     content: $expand-content;
     display: inline-block;

@@ -1,7 +1,6 @@
 ---
 title: "Resident Portal"
 date: 2021-01-04T09:51:11-05:00
-headerImage: "residents.jpg"
 menu:
   header:
     weight: 500

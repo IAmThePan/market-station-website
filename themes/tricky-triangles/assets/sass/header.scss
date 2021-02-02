@@ -21,6 +21,8 @@
 
   .SidebarNavigation__Container {
     width: calc(#{$mobile-nav-width} - 2 * #{$mobile-nav-padding});
+    height: calc(100% - 2 * #{$mobile-nav-padding});
+    overflow-y: scroll;
     padding: $mobile-nav-padding;
   }
 

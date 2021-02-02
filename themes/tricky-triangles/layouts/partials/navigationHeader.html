@@ -1,10 +1,7 @@
 {{ $currentPage := . }}
-
 <div class="Navigation NavigationHeader">
   {{ range .Site.Menus.header }}
     {{ if .HasChildren }}
-
-
       <div class="Navigation__LinkContainer">
         <a href="{{ .URL }}" class="Navigation__Link
             {{- if $currentPage.HasMenuCurrent "header" . }} Navigation--Active{{- end }}
@@ -33,7 +30,4 @@
       </div>
     {{ end }}
   {{ end }}
-
-
-
 </div>
