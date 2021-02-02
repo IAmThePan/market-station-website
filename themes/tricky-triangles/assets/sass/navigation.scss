@@ -1,0 +1,124 @@
+/* Navigation for Header & Sidebar */
+.Navigation {
+  font-family: $font-family-headers;
+  font-size: $mobile-nav-font-size;
+
+  .Navigation__LinkContainer {
+    margin: 0.5em;
+
+    &:hover .Navigation__Link {
+      color: $primary-complement;
+    }
+
+    .Navigation__Link {
+      font-size: 1em;
+      line-height: 1em;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      color: rgba($primary-complement, 0.6);
+      text-shadow: $header-text-shadow;
+      margin: 0;
+      padding: 0.5em 0.75em;
+      white-space: nowrap;
+      transition: color 0.2s linear;
+
+      &.Navigation--Active {
+        color: $primary-complement;
+      }
+    }
+  }
+}
+
+// ToDo: do this better, especially the button
+.Navigation.NavigationSidebar {
+  .Navigation__Link {
+    line-height: 2em;
+    &.Navigation--IsChild {
+      line-height: 1.5em;
+    }
+    &.Button,
+    &.Navigation--IsChild.Button {
+      line-height: 1.4em;
+    }
+  }
+}
+
+.Navigation.NavigationSidebar {
+  .NavigationSidebar__ParentLink:before {
+    content: $expand-content;
+    display: inline-block;
+    text-align: center;
+    width: 1em;
+  }
+
+  .NavigationSidebar__ChildrenContainer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s linear;
+  }
+
+  .NavigationSidebar__Child .Navigation__Link {
+    color: rgba($primary-complement, 0.6);
+    padding-left: 2em;
+
+    &.Navigation--Active {
+      color: rgba($primary-complement, 1);
+    }
+  }
+
+  .NavigationSidebar__Child:hover .Navigation__Link {
+    color: rgba($primary-complement, 1);
+  }
+
+  .NavigationSidebar__ExpandRadio:checked + .NavigationSidebar__Parent {
+    .NavigationSidebar__ParentLink:before {
+      content: $collapse-content;
+    }
+
+    .NavigationSidebar__ChildrenContainer {
+      max-height: 10em;
+    }
+  }
+}
+
+.Navigation.NavigationHeader {
+  display: flex;
+  align-items: center;
+
+  .NavigationHeader__ChildrenContainer {
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    color: rgba($primary-complement, 0);
+    background-color: $primary-color;
+    line-height: 2em;
+    transition: max-height 0.2s linear;
+  }
+
+  .Navigation__LinkContainer .NavigationHeader__Child {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+  }
+
+  .Navigation__LinkContainer:hover {
+    .NavigationHeader__ChildrenContainer {
+      max-height: 10em;
+    }
+
+    .NavigationHeader__Child {
+      opacity: 1;
+      transition: opacity 0.2s linear 0.2s;
+    }
+
+    .NavigationHeader__Child .Navigation__Link {
+      color: rgba($primary-complement, 0.6);
+      &.Navigation--Active {
+        color: $primary-complement;
+      }
+    }
+    .NavigationHeader__Child:hover .Navigation__Link {
+      color: rgba($primary-complement, 1);
+    }
+  }
+}

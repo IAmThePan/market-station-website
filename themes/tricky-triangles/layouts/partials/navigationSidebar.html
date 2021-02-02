@@ -1,0 +1,39 @@
+{{ $currentPage := . }}
+{{ $parentsWithChildren := 0 }}
+<div class="Navigation NavigationSidebar">
+  {{ range .Site.Menus.header }}
+    {{ if .HasChildren }}
+      {{ $parentsWithChildren = add $parentsWithChildren 1 }}
+      <input type="checkbox" id="NavigationSidebar__Parent{{ .Name }}" name="NavigationSidebar__ExpandParent" class="NavigationSidebar__ExpandRadio ∆--hide" />
+      <div class="Navigation__LinkContainer NavigationSidebar__Parent">
+        <label for="NavigationSidebar__Parent{{ .Name }}" class="Navigation__Link NavigationSidebar__ParentLink ∆--clickable
+            {{- if $currentPage.HasMenuCurrent "header" . }} Navigation--Active{{- end }}
+            {{- with .Page.Params.headerLinkClass }} {{ . }}{{- end }}">
+          {{ .Name }}
+        </label>
+        <div class="NavigationSidebar__ChildrenContainer">
+          {{ range .Children }}
+          <div class="NavigationSidebar__Child">
+            <a href="{{ .URL }}" class="Navigation__Link
+            {{- if $currentPage.IsMenuCurrent "header" . }} Navigation--Active{{- end }}
+            {{- with .Page.Params.headerLinkClass }} {{ . }}{{- end }}">
+            {{ .Name }}
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ else }}
+      <div class="Navigation__LinkContainer">
+        <a href="{{ .URL }}" class="Navigation__Link
+            {{- if $currentPage.IsMenuCurrent "header" . }} Navigation--Active{{- end }}
+            {{- with .Page.Params.headerLinkClass }} {{ . }}{{- end }}">
+          {{ .Name }}
+        </a>
+      </div>
+    {{ end }}
+  {{ end }}
+  {{ if gt $parentsWithChildren 0 }}
+    <input type="radio" id="NavigationSidebar__ParentNone" name="NavigationSidebar__ExpandParent" class="∆--hide" />
+  {{ end }}
+</div>

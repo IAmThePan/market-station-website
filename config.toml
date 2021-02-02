@@ -1,7 +1,7 @@
 baseURL = "https://marketstationapartmentsnc.com"
 languageCode = "en-us"
 title = "Market Station Apartments Greensboro, NC"
-theme = "cryptical"
+theme = "tricky-triangles"
 publishDir = "docs"
 
 [params]

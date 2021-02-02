@@ -27,7 +27,7 @@ My ToDos:
   - [ ] Scroll between gallery photos with a transition
 - CSS:
   - [ ] Convert CSS to SCSS and compile all theme SCSS files into one CSS file for import
-  - [ ] Separate Theme CSS from Site CSS (diferentiate along Classes used in Theme/Not)
+  - [ ] Separate Theme CSS from Site CSS (differentiate along Classes used in Theme/Not)
     - [ ] Shortcode classes not used in theme should be defined in site's CSS only
     - [ ] Define all Helper Classes in Site CSS only.
     - [ ] iframe border-color set by Site Variable, not hard coded inline.

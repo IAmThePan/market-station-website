@@ -1,0 +1,39 @@
+{{ $currentPage := . }}
+
+<div class="Navigation NavigationHeader">
+  {{ range .Site.Menus.header }}
+    {{ if .HasChildren }}
+
+
+      <div class="Navigation__LinkContainer">
+        <a href="{{ .URL }}" class="Navigation__Link
+            {{- if $currentPage.HasMenuCurrent "header" . }} Navigation--Active{{- end }}
+            {{- with .Page.Params.headerLinkClass }} {{ . }}{{- end }}">
+          {{ .Name }}
+        </a>
+        <div class="NavigationHeader__ChildrenContainer">
+          {{ range .Children }}
+            <div class="NavigationHeader__Child">
+              <a href="{{ .URL }}" class="Navigation__Link
+                  {{- if $currentPage.IsMenuCurrent "header" . }} Navigation--Active{{- end }}
+                  {{- with .Page.Params.headerLinkClass }} {{ . }}{{- end }}">
+                {{ .Name }}
+              </a>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ else }}
+      <div class="Navigation__LinkContainer">
+        <a href="{{ .URL }}" class="Navigation__Link
+            {{- if $currentPage.IsMenuCurrent "header" . }} Navigation--Active{{- end }}
+            {{- with .Page.Params.headerLinkClass }} {{ . }}{{- end }}">
+          {{ .Name }}
+        </a>
+      </div>
+    {{ end }}
+  {{ end }}
+
+
+
+</div>

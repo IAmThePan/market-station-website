@@ -7,10 +7,10 @@
 <meta name="description" content="Welcome to Market Station Apartments, spacious apartments at an affordable price. Conveniently located with lots of Amenities."/>
 
 
-<link rel="stylesheet" href="/css/fonts.css" />
+<link rel="stylesheet" href="https://marketstationapartmentsnc.com/sass/main.min.5503e4cb805c8ebde0c16e0877c110c364533eba505a173a6629b5e54a61c3dc.css">
+
 <link rel="stylesheet" href="/css/site.css" />
 <link rel="stylesheet" href="/css/main.css" />
-<link rel="stylesheet" href="/css/header.css" />
 <link rel="stylesheet" href="/css/footer.css" />
 <link rel="stylesheet" href="/css/sideMenu.css" />
 <link rel="stylesheet" href="/css/buttons.css" />
@@ -44,163 +44,178 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Market Station Apartments Greensboro, NC"/>
 <meta name="twitter:description" content="Welcome to Market Station Apartments, spacious apartments at an affordable price. Conveniently located with lots of Amenities."/>
-<body><header>
+<body><input type="checkbox" id="ShowSidebarNavigation" class="∆--hide" />
+<nav class="SidebarNavigation">
+  <label for="ShowSidebarNavigation" class="SidebarNavigation__Closer"></label>
+  <div class="SidebarNavigation__Container">
+
+<div class="Navigation NavigationSidebar">
+  
+    
+      <div class="Navigation__LinkContainer">
+        <a href="/" class="Navigation__Link">
+          Home
+        </a>
+      </div>
+    
+  
+    
+      
+      <input type="checkbox" id="NavigationSidebar__ParentApartments" name="NavigationSidebar__ExpandParent" class="NavigationSidebar__ExpandRadio ∆--hide" />
+      <div class="Navigation__LinkContainer NavigationSidebar__Parent">
+        <label for="NavigationSidebar__ParentApartments" class="Navigation__Link NavigationSidebar__ParentLink ∆--clickable">
+          Apartments
+        </label>
+        <div class="NavigationSidebar__ChildrenContainer">
+          
+          <div class="NavigationSidebar__Child">
+            <a href="/apartments/floorplans/" class="Navigation__Link">
+            Floor Plans
+          </a>
+        </div>
+        
+          <div class="NavigationSidebar__Child">
+            <a href="/apartments/amenities/" class="Navigation__Link">
+            Amenities
+          </a>
+        </div>
+        
+          <div class="NavigationSidebar__Child">
+            <a href="/apartments/location/" class="Navigation__Link">
+            Location
+          </a>
+        </div>
+        
+      </div>
+    </div>
+    
+  
+    
+      <div class="Navigation__LinkContainer">
+        <a href="/gallery/" class="Navigation__Link">
+          Photo Gallery
+        </a>
+      </div>
+    
+  
+    
+      <div class="Navigation__LinkContainer">
+        <a href="/apply/" class="Navigation__Link Navigation--Active">
+          Apply
+        </a>
+      </div>
+    
+  
+    
+      <div class="Navigation__LinkContainer">
+        <a href="/residents/" class="Navigation__Link">
+          Resident Portal
+        </a>
+      </div>
+    
+  
+    
+      <div class="Navigation__LinkContainer">
+        <a href="/contact/" class="Navigation__Link">
+          Contact Us
+        </a>
+      </div>
+    
+  
+  
+    <input type="radio" id="NavigationSidebar__ParentNone" name="NavigationSidebar__ExpandParent" class="∆--hide" />
+  
+</div>
+</div>
+</nav>
+<header>
   <div class="HeaderContent">
     <a class="HeaderContent__HomeLink" href="/">
       <h1>Market Station Apartments Greensboro, NC</h1>
     </a>
-    <div class="HeaderContent__MenuLinks">
-      
-      
-        
-          <div class="HeaderContent__MenuLinkContainer">
-            <a href="/" class="HeaderContent__MenuLink">
-              Home
-            </a>
-          </div>
-        
-      
-        
-          <div class="HeaderContent__MenuLinkContainer">
-            <a href="/apartments/floorplans" class="HeaderContent__MenuLink">
-              Apartments
-            </a>
-            <div class="HeaderContent__MenuChildren">
-              
-                <div class=HeaderContent__MenuChildContainer>
-                  <a href="/apartments/floorplans/" class="HeaderContent__MenuLink HeaderContent__MenuChild">
-                    Floor Plans
-                  </a>
-                </div>
-              
-                <div class=HeaderContent__MenuChildContainer>
-                  <a href="/apartments/amenities/" class="HeaderContent__MenuLink HeaderContent__MenuChild">
-                    Amenities
-                  </a>
-                </div>
-              
-                <div class=HeaderContent__MenuChildContainer>
-                  <a href="/apartments/location/" class="HeaderContent__MenuLink HeaderContent__MenuChild">
-                    Location
-                  </a>
-                </div>
-              
+    <div class="HeaderNavigation__Container">
+
+<div class="Navigation NavigationHeader">
+  
+    
+      <div class="Navigation__LinkContainer">
+        <a href="/" class="Navigation__Link">
+          Home
+        </a>
+      </div>
+    
+  
+    
+
+
+      <div class="Navigation__LinkContainer">
+        <a href="/apartments/floorplans" class="Navigation__Link">
+          Apartments
+        </a>
+        <div class="NavigationHeader__ChildrenContainer">
+          
+            <div class="NavigationHeader__Child">
+              <a href="/apartments/floorplans/" class="Navigation__Link">
+                Floor Plans
+              </a>
             </div>
-          </div>
-        
-      
-        
-          <div class="HeaderContent__MenuLinkContainer">
-            <a href="/gallery/" class="HeaderContent__MenuLink">
-              Photo Gallery
-            </a>
-          </div>
-        
-      
-        
-          <div class="HeaderContent__MenuLinkContainer">
-            <a href="/apply/" class="HeaderContent__MenuLink HeaderContent--Active">
-              Apply
-            </a>
-          </div>
-        
-      
-        
-          <div class="HeaderContent__MenuLinkContainer">
-            <a href="/residents/" class="HeaderContent__MenuLink">
-              Resident Portal
-            </a>
-          </div>
-        
-      
-        
-          <div class="HeaderContent__MenuLinkContainer">
-            <a href="/contact/" class="HeaderContent__MenuLink Button Button--Bold">
-              Contact Us
-            </a>
-          </div>
-        
-      
-    </div>
-    <div class="HeaderContent__MobileMenu">
-      <input class="HeaderContent__MobileMenuInput" id="MobileMenu__Input" type="checkbox" />
-      <label for="MobileMenu__Input" class="HeaderContent__HamburgerContainer">
-        <div class="HeaderContent__Hamburger"></div>
-      </label>
-      <div class="HeaderContent__MobileMenuContent">
-        <div class="HeaderContent__MobileMenuForceRight"></div>
-        <div>
           
-            
-              <div class="HeaderContent__MenuLinkContainer">
-                <a href="/" class="HeaderContent__MenuLink">
-                  Home
-                </a>
-              </div>
-            
+            <div class="NavigationHeader__Child">
+              <a href="/apartments/amenities/" class="Navigation__Link">
+                Amenities
+              </a>
+            </div>
           
-            
-              <div class="HeaderContent__MenuLinkContainer">
-                <a href="/apartments/floorplans" class="HeaderContent__MenuLink">
-                  Apartments
-                </a>
-              </div>
-              
-                <div class="HeaderContent__MenuLinkContainer">
-                  <a href="/apartments/floorplans/" class="HeaderContent__MenuLink HeaderContent__MenuChild">
-                    Floor Plans
-                  </a>
-                </div>
-              
-                <div class="HeaderContent__MenuLinkContainer">
-                  <a href="/apartments/amenities/" class="HeaderContent__MenuLink HeaderContent__MenuChild">
-                    Amenities
-                  </a>
-                </div>
-              
-                <div class="HeaderContent__MenuLinkContainer">
-                  <a href="/apartments/location/" class="HeaderContent__MenuLink HeaderContent__MenuChild">
-                    Location
-                  </a>
-                </div>
-              
-            
-          
-            
-              <div class="HeaderContent__MenuLinkContainer">
-                <a href="/gallery/" class="HeaderContent__MenuLink">
-                  Photo Gallery
-                </a>
-              </div>
-            
-          
-            
-              <div class="HeaderContent__MenuLinkContainer">
-                <a href="/apply/" class="HeaderContent__MenuLink HeaderContent--Active">
-                  Apply
-                </a>
-              </div>
-            
-          
-            
-              <div class="HeaderContent__MenuLinkContainer">
-                <a href="/residents/" class="HeaderContent__MenuLink">
-                  Resident Portal
-                </a>
-              </div>
-            
-          
-            
-              <div class="HeaderContent__MenuLinkContainer">
-                <a href="/contact/" class="HeaderContent__MenuLink Button Button--Bold">
-                  Contact Us
-                </a>
-              </div>
-            
+            <div class="NavigationHeader__Child">
+              <a href="/apartments/location/" class="Navigation__Link">
+                Location
+              </a>
+            </div>
           
         </div>
       </div>
-    </div>
+    
+  
+    
+      <div class="Navigation__LinkContainer">
+        <a href="/gallery/" class="Navigation__Link">
+          Photo Gallery
+        </a>
+      </div>
+    
+  
+    
+      <div class="Navigation__LinkContainer">
+        <a href="/apply/" class="Navigation__Link Navigation--Active">
+          Apply
+        </a>
+      </div>
+    
+  
+    
+      <div class="Navigation__LinkContainer">
+        <a href="/residents/" class="Navigation__Link">
+          Resident Portal
+        </a>
+      </div>
+    
+  
+    
+      <div class="Navigation__LinkContainer">
+        <a href="/contact/" class="Navigation__Link">
+          Contact Us
+        </a>
+      </div>
+    
+  
+
+
+
+</div>
+</div>
+    <label for="ShowSidebarNavigation" class="SidebarNavigation__Opener ∆--clickable">
+      <div class="HamburgerIcon"></div>
+    </label>
   </div>
 </header>
 <main class="Main">

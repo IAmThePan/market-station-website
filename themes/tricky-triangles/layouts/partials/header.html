@@ -1,0 +1,25 @@
+<input type="checkbox" id="ShowSidebarNavigation" class="∆--hide" />
+<nav class="SidebarNavigation">
+  <label for="ShowSidebarNavigation" class="SidebarNavigation__Closer"></label>
+  <div class="SidebarNavigation__Container">
+    {{- partial "navigationSidebar.html" . -}}
+  </div>
+</nav>
+<header
+  {{- with .Page.Resources.GetMatch "banner.jpg" }}
+    class="Header--Long"
+    style="background-image: url('{{ .RelPermalink }}')"
+  {{ end -}}
+>
+  <div class="HeaderContent">
+    <a class="HeaderContent__HomeLink" href="/">
+      <h1>{{ .Site.Title }}</h1>
+    </a>
+    <div class="HeaderNavigation__Container">
+      {{- partial "navigationHeader.html" . -}}
+    </div>
+    <label for="ShowSidebarNavigation" class="SidebarNavigation__Opener ∆--clickable">
+      <div class="HamburgerIcon"></div>
+    </label>
+  </div>
+</header>
