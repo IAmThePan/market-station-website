@@ -333,7 +333,8 @@ header {
     height: 325px;
     background-position: center;
     background-size: cover;
-    background-blend-mode: overlay; }
+    background-blend-mode: overlay;
+    background-color: rgba(60, 76, 92, 0.2); }
   header .HeaderContent {
     display: flex;
     justify-content: space-between;
@@ -350,7 +351,7 @@ header {
         text-align: center;
         letter-spacing: 2px;
         color: #fcfbf8;
-        text-shadow: #3c4c5c;
+        text-shadow: 1px 1px #3c4c5c;
         margin: 0;
         padding-top: 0;
         padding-bottom: 0; }
@@ -383,7 +384,7 @@ header {
   transition: all 0.2s linear; }
 
 #ShowSidebarNavigation:checked + .SidebarNavigation + header .HeaderContent .SidebarNavigation__Opener .HamburgerIcon {
-  background-color: rgba(252, 251, 248, 0); }
+  background-color: rgba(255, 255, 255, 0); }
   #ShowSidebarNavigation:checked + .SidebarNavigation + header .HeaderContent .SidebarNavigation__Opener .HamburgerIcon:before {
     transform: rotate(45deg);
     transform-origin: 4px 6px; }
@@ -417,7 +418,7 @@ footer {
   margin: 0 auto;
   font-size: 16px;
   font-weight: 400;
-  color: rgba(252, 251, 248, 0.6); }
+  color: #afb5ba; }
 
 .FooterContent .FooterContent--Bold {
   font-weight: 600;
@@ -428,7 +429,7 @@ footer {
 
 .FooterContent .FooterContent--Normal {
   text-decoration: none;
-  color: rgba(252, 251, 248, 0.6); }
+  color: #afb5ba; }
 
 /* Side Menu */
 .SideMenu {
@@ -457,7 +458,7 @@ footer {
   text-transform: uppercase;
   text-decoration: none;
   line-height: 1.8em;
-  color: rgba(60, 76, 92, 0.6);
+  color: #89929a;
   transition: color 0.2s linear; }
 
 .SideMenu .SideMenu__Page:hover,
@@ -468,7 +469,8 @@ footer {
 .SideMenu .SideMenu__CollapseLabel,
 .SideMenu .SideMenu__ButtonOpen,
 .SideMenu .SideMenu__ButtonClose {
-  display: none; }
+  display: none;
+  color: #3c4c5c; }
 
 @media (max-width: 880px) {
   .Main {
@@ -497,8 +499,8 @@ footer {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0;
-    color: rgba(252, 251, 248, 0.6);
-    text-shadow: #3c4c5c;
+    color: #afb5ba;
+    text-shadow: 1px 1px #3c4c5c;
     margin: 0;
     padding: 0.5em 0.75em;
     white-space: nowrap;
@@ -522,7 +524,7 @@ footer {
   transition: max-height 0.2s linear; }
 
 .Navigation.NavigationSidebar .NavigationSidebar__Child .Navigation__Link {
-  color: rgba(252, 251, 248, 0.6);
+  color: #afb5ba;
   padding-left: 2em; }
   .Navigation.NavigationSidebar .NavigationSidebar__Child .Navigation__Link.Navigation--Active {
     color: #fcfbf8; }
@@ -543,7 +545,7 @@ footer {
     position: absolute;
     max-height: 0;
     overflow: hidden;
-    color: rgba(252, 251, 248, 0);
+    color: rgba(255, 255, 255, 0);
     background-color: #3c4c5c;
     line-height: 2em;
     transition: max-height 0.2s linear; }
@@ -556,7 +558,7 @@ footer {
     opacity: 1;
     transition: opacity 0.2s linear 0.2s; }
   .Navigation.NavigationHeader .Navigation__LinkContainer:hover .NavigationHeader__Child .Navigation__Link {
-    color: rgba(252, 251, 248, 0.6); }
+    color: #afb5ba; }
     .Navigation.NavigationHeader .Navigation__LinkContainer:hover .NavigationHeader__Child .Navigation__Link.Navigation--Active {
       color: #fcfbf8; }
   .Navigation.NavigationHeader .Navigation__LinkContainer:hover .NavigationHeader__Child:hover .Navigation__Link {
@@ -582,7 +584,7 @@ footer {
 
 .Button.Button--Dark {
   padding: 1em 2em;
-  color: rgba(252, 251, 248, 0.8);
+  color: #afb5ba;
   background-color: #3c4c5c;
   font-size: 14px;
   font-weight: 600;
@@ -657,8 +659,8 @@ footer {
   height: 30px;
   width: 30px;
   margin: 2vh 2vw;
-  border-bottom: 2px solid rgba(60, 76, 92, 0.6);
-  border-left: 2px solid rgba(60, 76, 92, 0.6);
+  border-bottom: 2px solid #89929a;
+  border-left: 2px solid #89929a;
   transition: border-color 0.2s linear; }
 
 .Gallery__Previous:hover:before,
@@ -689,7 +691,7 @@ footer {
   flex-shrink: 0;
   height: 2px;
   width: 30px;
-  background-color: rgba(60, 76, 92, 0.6);
+  background-color: #89929a;
   transition: background-color 0.2s linear; }
 
 .Gallery__Close:hover:before,
@@ -768,7 +770,7 @@ footer {
   flex-shrink: 0;
   height: 2px;
   width: 30px;
-  background-color: rgba(60, 76, 92, 0.6);
+  background-color: #89929a;
   transition: background-color 0.2s linear; }
 
 .MiniGallery__Close:hover:before,
@@ -819,7 +821,7 @@ footer {
 
 .MainContent hr {
   border: none;
-  border-top: 1px solid rgba(60, 76, 92, 0.15);
+  border-top: 1px solid #afb5ba;
   margin: 32px 0; }
 
 .MainContent h1 {

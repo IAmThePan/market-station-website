@@ -5,6 +5,7 @@ theme = "tricky-triangles"
 publishDir = "docs"
 
 [params]
+  image = "images/MarketStation.jpg"
   description = "Welcome to Market Station Apartments, spacious apartments at an affordable price. Conveniently located with lots of Amenities."
 [params.property]
   name = "Market Station Apartments"
