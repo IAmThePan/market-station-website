@@ -1,0 +1,11 @@
+{{ if ne (.Page.Scratch.Get "ImportCSS--iFrame") true }}
+  {{ .Page.Scratch.Set "ImportCSS--iFrame" true }}
+  <style>{{ (resources.Get "sass/shortcodes/iFrame.scss" | toCSS | minify ).Content | safeCSS }}</style>
+{{ end }}
+
+<iframe
+    src="{{ .Get "src" }}"
+    {{ with .Get "width" }}width="{{ . }}"{{ end }}
+    {{ with .Get "height" }}height="{{ . }}"{{ end }}
+    class="IFrame--AddBorder">
+</iframe>

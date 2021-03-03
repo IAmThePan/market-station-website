@@ -225,7 +225,12 @@
 </div>
 
 <div class="MainContent text-center">
-        <div class="MiniGallery">
+        
+  
+  <style>.MiniGallery{display:flex;flex-wrap:wrap;justify-content:space-between}.MiniGallery__Item{flex:1 0 34%;margin:0 .5em 1em}.MiniGallery__Input{position:absolute;top:0;left:0;height:0;width:0;opacity:0;pointer-events:none}.MiniGallery__Label{display:block;padding:.25em}.MiniGallery__Thumbnail{height:150px}.MiniGallery__ThumbnailCaption{text-align:center;font-weight:600}.MiniGallery__FullSize{position:fixed;top:0;bottom:0;left:0;right:0;display:none;align-items:center;justify-content:center;background-color:rgba(252,251,248,.8)}.MiniGallery input:checked~.MiniGallery__FullSize{display:flex}.MiniGallery__FullSize img{max-height:96vh;max-width:96vw}.MiniGallery__Close{position:fixed;display:flex;justify-content:center;align-items:center;top:2vh;right:2vw;height:30px;width:30px;cursor:pointer}.MiniGallery__Close:before,.MiniGallery__Close:after{content:"";position:absolute;flex-shrink:0;height:2px;width:30px;background-color:#89929a;-webkit-transition:background-color .2s linear;-moz-transition:background-color .2s linear;-ms-transition:background-color .2s linear;-o-transition:background-color .2s linear;transition:background-color .2s linear}.MiniGallery__Close:hover:before,.MiniGallery__Close:hover:after{background-color:#3c4c5c}.MiniGallery__Close:before{transform:rotate(45deg)}.MiniGallery__Close:after{transform:rotate(135deg)}@media(max-width:880px){.MiniGallery .MiniGallery__Item{flex-basis:51%}}</style>
+
+
+<div class="MiniGallery">
   
   
     
@@ -239,7 +244,7 @@
         </label>
         <div class="MiniGallery__FullSize">
           <img src="/apartments/floorplans/1.Studio.png" />
-          <label for="MiniGallery__FloorPlanGallery__Checkbox__0" class="Gallery__Close"></label>
+          <label for="MiniGallery__FloorPlanGallery__Checkbox__0" class="MiniGallery__Close"></label>
         </div>
       </div>
     
@@ -253,7 +258,7 @@
         </label>
         <div class="MiniGallery__FullSize">
           <img src="/apartments/floorplans/2.Studio%20Deluxe.png" />
-          <label for="MiniGallery__FloorPlanGallery__Checkbox__1" class="Gallery__Close"></label>
+          <label for="MiniGallery__FloorPlanGallery__Checkbox__1" class="MiniGallery__Close"></label>
         </div>
       </div>
     
@@ -267,7 +272,7 @@
         </label>
         <div class="MiniGallery__FullSize">
           <img src="/apartments/floorplans/3.1%20Bedroom.png" />
-          <label for="MiniGallery__FloorPlanGallery__Checkbox__2" class="Gallery__Close"></label>
+          <label for="MiniGallery__FloorPlanGallery__Checkbox__2" class="MiniGallery__Close"></label>
         </div>
       </div>
     
@@ -281,7 +286,7 @@
         </label>
         <div class="MiniGallery__FullSize">
           <img src="/apartments/floorplans/4.2%20Bedroom%20-%202%20Bathroom.png" />
-          <label for="MiniGallery__FloorPlanGallery__Checkbox__3" class="Gallery__Close"></label>
+          <label for="MiniGallery__FloorPlanGallery__Checkbox__3" class="MiniGallery__Close"></label>
         </div>
       </div>
     
@@ -299,6 +304,8 @@
 
 <p>Each residence at Market Station has its own front door for maximum privacy
 and convenience, so you will never have to walk down a long corridor.</p>
+
+
 
   <a href="/apply/" class="Button Button--Dark">
     View Current Availability

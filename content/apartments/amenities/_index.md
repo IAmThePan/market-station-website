@@ -9,7 +9,7 @@ menu:
     weight: 200
 ---
 
-#### Community { class="Amenities__SectionTitle no-top-margin" }
+#### Community { class="no-top-margin" }
 - **Lush landscaped grounds** & tall shade trees
 - **Business center** with high-speed internet
 - **Double-bay car care center** with vacuum
@@ -22,7 +22,7 @@ menu:
 
 ***
 
-#### Apartments { class="Amenities__SectionTitle"}
+#### Apartments
 - **Studio** - Our studios have a separate bedroom nook, allowing you to differentiate your living room from your bedroom area for maximum privacy.
 - **1BR** - Our one-bedroom apartments give you lots of storage and multiple closets throughout the apartment.
 - **2BR** - Our two-bedrooms have a split-bedroom floor plan to maximize space and comfort.

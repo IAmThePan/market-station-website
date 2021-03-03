@@ -7,7 +7,7 @@ menu:
     weight: 100
 ---
 
-{{< figure src="/images/MarketStation.jpg" alt="Market Station Clubhouse" class="HomePage__BannerImage" >}}
+{{< figure src="/images/MarketStation.jpg" alt="Market Station Clubhouse" class="FigureImage__Banner" >}}
 
 {{< button text="View Current Availability" theme="Dark" link="/apply/" >}}
 
