@@ -9,7 +9,7 @@ menu:
 
 {{< figure src="/images/MarketStation.jpg" alt="Market Station Clubhouse" class="FigureImage__Banner" >}}
 
-{{< button text="View Current Availability" theme="Dark" link="/apply/" >}}
+{{< button text="View Current Availability" class="Button--Primary Button--Solid" link="/apply/" >}}
 
 **Market Station Apartments -- Conveniently Located and Affordable**
 

@@ -10,8 +10,8 @@ menu:
 
 {{< addClass class="flex-container align-center space-around flex-wrap-small">}}
   <h4>Resident Login:</h4>
-  {{< button text="Online Payments" theme="Dark" link="https://crypticalstation.appfolio.com/connect/users/sign_in" >}}
-  {{< button text="Maintenance Requests" theme="Dark" link="https://crypticalstation.appfolio.com/connect/users/sign_in" >}}
+  {{< button text="Online Payments" class="Button--Primary" link="https://crypticalstation.appfolio.com/connect/users/sign_in" >}}
+  {{< button text="Maintenance Requests" class="Button--Primary" link="https://crypticalstation.appfolio.com/connect/users/sign_in" >}}
 {{< /addClass >}}
 ***
 
