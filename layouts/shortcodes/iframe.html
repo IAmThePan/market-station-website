@@ -1,5 +1,7 @@
-{{ if ne (.Page.Scratch.Get "ImportCSS--iFrame") true }}
-  {{ .Page.Scratch.Set "ImportCSS--iFrame" true }}
+{{ $importCount := add 1 (or (.Page.Scratch.Get "Count--iFrame") 0) }}
+{{ .Page.Scratch.Set "Count--iFrame" $importCount }}
+
+{{ if eq $importCount 1 }}
   <style>{{ (resources.Get "sass/shortcodes/iFrame.scss" | toCSS | minify ).Content | safeCSS }}</style>
 {{ end }}
 

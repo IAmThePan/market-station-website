@@ -1,5 +1,7 @@
-{{ if ne (.Page.Scratch.Get "ImportCSS--contactInfo") true }}
-  {{ .Page.Scratch.Set "ImportCSS--contactInfo" true }}
+{{ $importCount := add 1 (or (.Page.Scratch.Get "Count--ContactInfo") 0) }}
+{{ .Page.Scratch.Set "Count--ContactInfo" $importCount }}
+
+{{ if eq $importCount 1 }}
   <style>{{ (resources.Get "sass/shortcodes/contactInfo.scss" | toCSS | minify ).Content | safeCSS }}</style>
 {{ end }}
 

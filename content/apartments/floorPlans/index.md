@@ -10,7 +10,7 @@ menu:
     weight: 100
 ---
 
-{{< miniGallery name="FloorPlanGallery" >}}
+{{< gallery isMini="true" captions="true" >}}
 
 Each residence at Market Station has its own front door for maximum privacy
 and convenience, so you will never have to walk down a long corridor.
