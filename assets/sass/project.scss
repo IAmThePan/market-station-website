@@ -15,18 +15,13 @@
 @import "variableOverrides.sass";
 
 // Classes used in the Content folder
-.FigureImage__Banner,
-.FigureImage__Logo {
+.FigureImage__Banner {
   margin: 1em 0;
 }
 .FigureImage__Banner img {
   height: 500px;
   width: 100%;
   object-fit: cover;
-}
-.FigureImage__Logo img {
-  width: 100%;
-  object-fit: contain;
 }
 .HelpSection ~ p {
   margin: 0.75em 0;
@@ -38,5 +33,5 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   line-height: 1.2em;
-  color: #d16d5a;
+  color: $secondary-color;
 }

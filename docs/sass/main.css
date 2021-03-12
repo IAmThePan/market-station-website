@@ -263,18 +263,13 @@
  * Colors were adapted from property documents and an online theme generator.
  * Online Theme: https://www.colorcombos.com/color-schemes/79/ColorCombo79.html
  */
-.FigureImage__Banner,
-.FigureImage__Logo {
+.FigureImage__Banner {
   margin: 1em 0; }
 
 .FigureImage__Banner img {
   height: 500px;
   width: 100%;
   object-fit: cover; }
-
-.FigureImage__Logo img {
-  width: 100%;
-  object-fit: contain; }
 
 .HelpSection ~ p {
   margin: 0.75em 0; }
