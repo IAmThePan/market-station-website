@@ -741,6 +741,10 @@ a {
 .text-italic {
   font-style: italic; }
 
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word; }
+
 .center-next + * {
   text-align: center; }
 
