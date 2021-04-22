@@ -19,5 +19,7 @@ and convenience, so you will never have to walk down a long corridor.
 
 ***
 
-#### Virtual Tour
+#### Virtual Tours
 {{< iframe src="https://my.matterport.com/show/?model=Ae2AqPGoXJt" height="500px" width="100%" >}}
+
+{{< iframe src="https://my.matterport.com/show/?model=vJPgnpmzksR" height="500px" width="100%" >}}
