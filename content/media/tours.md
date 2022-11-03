@@ -9,6 +9,8 @@ menu:
 
 {{< iframe src="https://my.matterport.com/show/?model=Ae2AqPGoXJt" height="500px" width="100%" >}}
 
+{{< iframe src="https://my.matterport.com/show/?model=PgYPFRiQVLD" height="500px" width="100%" >}}
+
 {{< iframe src="https://my.matterport.com/show/?model=vJPgnpmzksR" height="500px" width="100%" >}}
 
 {{< iframe src="https://my.matterport.com/show/?model=t5Jiv9sMANB" height="500px" width="100%" >}}
