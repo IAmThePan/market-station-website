@@ -1,3 +1,7 @@
+Post GIT CLONE:
+`git submodule init`
+`git submodule update`
+
 Directory of Pages:
 - [x] HomePage
 - Apartments:
