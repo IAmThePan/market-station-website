@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Market Station Apartments Greensboro, NC"
 theme = "tricky-triangles"
 publishDir = "docs"
-googleAnalytics = "G-LHDM3L4MQ7"
+googleAnalytics = "G-S7843XPDWF"
 
 [params]
   image = "images/MarketStation.jpg"
